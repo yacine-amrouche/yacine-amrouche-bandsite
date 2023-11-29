@@ -1,3 +1,12 @@
+@use "variables.scss" as *;
+*{
+    box-sizing: border-box;
+}
 body{
-    color: aqua;
+    margin: 0;
+}
+header{
+    background-color: $back-color;
+    color: $text-color;
+
 }
