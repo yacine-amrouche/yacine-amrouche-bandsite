@@ -1,3 +1,112 @@
-body {
-  color: aqua;
+@font-face {
+  font-family: avenir-next-regular, sans-serif, times, serif;
+  src: url(../../assets/Font/AvenirNextLTPro-Regular.otf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  text-decoration: none;
+  font-family: avenir-next-regular, sans-serif, times, serif;
+}
+
+.header {
+  background-color: #323232;
+  color: #ffffff;
+  width: 100%;
+  height: 40%;
+  padding-top: 24px;
+  padding-bottom: 16px;
+  text-align: center;
+}
+@media (min-width: 1279px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.header__logo {
+  width: 20px;
+  height: 120px;
+}
+
+.navbar__list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding-top: 1rem;
+}
+.navbar__list--item {
+  width: 50%;
+  font-weight: 400;
+}
+.navbar__list--item-underline {
+  border-bottom: 4px solid #ffffff;
+  font-weight: 600;
+  padding-left: 0;
+  margin-bottom: -16px;
+}
+
+.footer {
+  background-color: #323232;
+  color: #ffffff;
+  padding: 30px 0 20px 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.footer__container--item .footer--heading {
+  padding-bottom: 1rem;
+}
+.footer__container--item .footer__icon:not(:first-child) {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.hero {
+  background-image: url(../assets/Images/hero-bio.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 44vh;
+  width: 100%;
+}
+.hero__heading {
+  color: #ffffff;
+  line-height: 44vh;
+  padding-left: 1rem;
+}
+
+.about {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.about__heading {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.about .container--img {
+  width: 100%;
+}
+.about .container-paragraph {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+}
+.about .articale-content {
+  font-size: 0.813rem;
+  font-weight: 400;
+}
+.about .articale-titele {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+}
+
+.container--img img {
+  width: 100%;
 }/*# sourceMappingURL=bio.css.map */

@@ -1,12 +1,33 @@
-@use "variables.scss" as *;
-*{
-    box-sizing: border-box;
-}
-body{
-    margin: 0;
-}
-header{
-    background-color: $back-color;
-    color: $text-color;
+@use "./partials/global" as *;
+@use "./partials/variables" as *;
+@use "./partials/mixins" as *;
 
+.about{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    &__heading{
+        @include header_mobile;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .container--img{
+        width: 100%;
+    }
+    .container-paragraph{
+        @include subheader_mobile;
+    }
+
+    .articale-content{
+        @include body-copy_mobile;
+    }
+    .articale-titele{
+        @include subheader_mobile
+    }
+
+}
+
+
+
+.container--img img {
+    width: 100%;
 }
