@@ -107,6 +107,7 @@ body {
     background-color: $back-color;
     color: $text-color;
     padding-top: 2rem;
+    font-family: $font-family;
     
     @include footer-body;
     &--heading{
@@ -148,6 +149,23 @@ body {
 
    
 }
-
+@include tablet{
+    .footer__container--box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    .footer__logo{
+        position: relative;
+        bottom: 19rem;
+        left: 42rem;
+    }
+    .footer__copy{
+        position: relative;
+        bottom: 4rem;
+        
+    }
+}
 
 

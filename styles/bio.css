@@ -57,7 +57,7 @@ body {
   padding-left: 0;
   margin-bottom: -16px;
 }
-@media (min-width: 1279px) {
+@media (min-width: 768px) {
   .header {
     display: flex;
     flex-direction: row;
@@ -95,6 +95,7 @@ body {
   background-color: #323232;
   color: #ffffff;
   padding-top: 2rem;
+  font-family: "Avenir LT Pro", sans-serif;
   font-size: 14px;
   line-height: 20px;
 }
@@ -132,6 +133,22 @@ body {
   padding-bottom: 1rem;
 }
 
+@media (min-width: 768px) {
+  .footer__container--box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .footer__logo {
+    position: relative;
+    bottom: 19rem;
+    left: 42rem;
+  }
+  .footer__copy {
+    position: relative;
+    bottom: 4rem;
+  }
+}
 .about {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -162,20 +179,41 @@ body {
   font-weight: 400;
 }
 
+@media (min-width: 768px) {
+  .about__box {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+.container--img img {
+  padding: 0.5rem;
+  width: 100%;
+}
+
 .gallery {
+  padding: 0 1rem;
   background-color: #e1e1e1;
-  margin-top: 2rem;
 }
 .gallery-heading {
-  padding-top: 1rem;
-  padding-left: 1rem;
+  padding: 2rem 0 0 1.5rem;
 }
-.gallery__container {
-  padding-top: 1rem;
+.gallery-heading {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
-.gallery__container--img {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
+@media (min-width: 768px) {
+  .gallery__container--item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
 }/*# sourceMappingURL=bio.css.map */
