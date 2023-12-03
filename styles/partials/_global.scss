@@ -167,5 +167,14 @@ body {
         
     }
 }
+@include desktop{
+    .footer__logo{
+        position: relative;
+        bottom: 19rem;
+        left: 67rem;
+    }
+}
+
+
 
 
