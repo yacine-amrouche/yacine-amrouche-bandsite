@@ -13,6 +13,9 @@
         @content;
     }
 }
+
+
+
     
 @mixin header_mobile{
     font-size: 1.5rem;
@@ -45,3 +48,31 @@
     stroke-width: 1px;
     color: #e1e1e1
 }
+
+/**/
+@mixin header_tablet {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 700;
+  }
+  
+  @mixin subheader_tablet {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+  }
+  @mixin body-copy_tablet {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  
+  @mixin footer-body-tablet {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  @mixin divider {
+    stroke-width: 1px;
+    color: #e1e1e1;
+  }

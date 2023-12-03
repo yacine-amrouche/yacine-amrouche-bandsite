@@ -5,29 +5,71 @@
 .about{
     padding-left: 1rem;
     padding-right: 1rem;
+    
+    
+    @include tablet{
+        .container{
+            display: flex;
+            flex-direction: row;
+        }
+            
+    }
     &__heading{
-        @include header_mobile;
-        padding-top: 1rem;
+        margin-top: 2rem;
         padding-bottom: 1rem;
     }
-    .container--img{
-        width: 100%;
-    }
-    .container-paragraph{
+    &__container{
         @include subheader_mobile;
-    }
-
-    .articale-content{
-        @include body-copy_mobile;
-    }
-    .articale-titele{
-        @include subheader_mobile
+        &--img{
+            width: 100%;
+        }
+        &--paragraph{
+            @include subheader_mobile;
+            font-weight: 700;
+            padding-top: 1rem;
+        }
+        &-titele{
+            padding-top: 1.5rem;
+            font-weight: 600;
+        }
+        &--articale{
+            padding-top: 1rem;
+            font-weight: 400;
+        }
+       
     }
 
 }
+.gallery{
+    background-color: $foto-back-color;
+    margin-top: 2rem;
+  
+
+    &-heading{
+        padding-top: 1rem;
+        padding-left: 1rem;
+        
+    }
+    &__container{
+        padding-top: 1rem;
+        &--img{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          padding: 1rem;
+    }
+   
 
 
+}
+@include tablet{
+    &__container--item{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2px;
+    }
+    
+}
 
-.container--img img {
-    width: 100%;
 }
