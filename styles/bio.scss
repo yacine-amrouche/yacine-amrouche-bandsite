@@ -5,15 +5,7 @@
 .about{
     padding-left: 1rem;
     padding-right: 1rem;
-    
-    
-    @include tablet{
-        .container{
-            display: flex;
-            flex-direction: row;
-        }
-            
-    }
+
     &__heading{
         margin-top: 2rem;
         padding-bottom: 1rem;
@@ -40,6 +32,7 @@
     }
 
 }
+
 .gallery{
     background-color: $foto-back-color;
     margin-top: 2rem;
@@ -62,14 +55,6 @@
 
 
 }
-@include tablet{
-    &__container--item{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2px;
-    }
-    
-}
+
 
 }
