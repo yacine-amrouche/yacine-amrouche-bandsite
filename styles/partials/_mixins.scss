@@ -76,3 +76,11 @@
     stroke-width: 1px;
     color: #e1e1e1;
   }
+  @mixin size-between-tablet{
+    margin-right: 2.25rem;
+    margin-left: 2.25rem;
+  }
+  @mixin size-between-desktop{
+    margin-right: auto;
+    margin-left: auto;
+  }

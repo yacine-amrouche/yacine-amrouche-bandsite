@@ -59,9 +59,16 @@ body {
         border-bottom: 4px solid $text-color;
         font-weight: 600;
         padding-left: 0;
-        margin-bottom: -16px;
+        margin-bottom: -1rem;
+       
       }
+     
     }
+    &--item-hover:hover{
+        border-bottom: 0.2rem solid $foto-back-color;
+        margin-bottom: -2.5rem;
+    }
+    
   }
 
   @include tablet {
@@ -69,17 +76,17 @@ body {
     flex-direction: row;
 
     .header__Logo {
-      padding: 0 16px;
+      padding: 0 1rem;
     }
 
     .navbar__list {
       padding-top: 0;
 
       &--item {
-        margin-left: 32px;
+        margin-left: 2rem;
 
         &-underline {
-          margin-bottom: -22px;
+          margin-bottom: -1.375rem;
         }
       }
     }

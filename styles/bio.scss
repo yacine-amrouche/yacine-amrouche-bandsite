@@ -5,6 +5,13 @@
 .about{
     padding-left: 1rem;
     padding-right: 1rem;
+   @include tablet{
+    @include size-between-tablet;
+   }
+   @include desktop{
+    @include size-between-desktop;
+   }
+    
 
     &__heading{
         margin-top: 2rem;
@@ -41,7 +48,14 @@
     .container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
+        gap: 2rem;
+    }
+}
+@include desktop{
+    .about__box{
+        margin:auto;
+        width: 63vw;
+        height: 100%;
     }
 }
 
@@ -54,6 +68,14 @@
 .gallery {
     padding: 0 1rem;
     background-color: $foto-back-color;
+    @include tablet{
+        @include size-between-tablet;
+       }
+       @include desktop{
+        @include size-between-desktop;
+       }
+   
+
     &-heading{
         padding: 2rem 0 0 1.5rem;
     }
