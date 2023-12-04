@@ -14,14 +14,9 @@
     }
 }
 
-
-
     
 @mixin header_mobile{
-    font-size: 1.5rem;
-    line-height: 2rem;
-    
-    
+    font-size: 2.5rem;
 }
 
 @mixin subheader_mobile{
@@ -30,46 +25,49 @@
     
 
 }
- @mixin body-copy_mobile{
+ @mixin body-copy-mobile{
     font-size: 0.813rem;
-    font-weight: 400;
-
+    line-height: 1.125rem;
  }
+ @mixin footer-copy-mobile{
+    font-size: 0.813rem;
+    line-height: 1.125rem;
+
+}   
  @mixin logo{
     width: 20px;
     height: 120px;
  }
-@mixin footer-body{
-    font-size: 14px;
-    line-height: 20px;
 
-}
 @mixin divider{
     stroke-width: 1px;
     color: #e1e1e1
 }
 
 /**/
+@mixin page-tablet{
+    font-size: 3.75rem;
+}
 @mixin header_tablet {
-    font-size: 36px;
-    line-height: 44px;
-    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+   
   }
   
   @mixin subheader_tablet {
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    
   }
   @mixin body-copy_tablet {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 0.875;
+    line-height: 1.25rem;
     font-weight: 400;
   }
   
   @mixin footer-body-tablet {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 0.875rem;
+    line-height: 1,25rem;
   }
   
   @mixin divider {

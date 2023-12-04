@@ -16,25 +16,67 @@
     &__heading{
         margin-top: 2rem;
         padding-bottom: 1rem;
+        @include header_mobile;
+        @include tablet{
+            @include header_tablet;
+        }
+        @include desktop{
+            @include header_tablet;
+        }
     }
     &__container{
         @include subheader_mobile;
+        @include tablet{
+            @include subheader_tablet;
+        }
+        @include desktop{
+            @include subheader_tablet;
+        }
         &--img{
 
             width: 100%;
         }
         &--paragraph{
-            @include subheader_mobile;
             font-weight: 700;
             padding-top: 1rem;
+            @include subheader_mobile;
+            @include tablet{
+                @include subheader_tablet;
+            }
+            @include desktop{
+                @include subheader_tablet;
+            }
+        }
+        &--paragraph-sub{
+            @include body-copy-mobile;
+            @include tablet{
+                @include body-copy_tablet
+            }
+            @include tablet{
+                @include body-copy_tablet
+            }
         }
         &-titele{
             padding-top: 1.5rem;
             font-weight: 600;
+            @include subheader_mobile;
+            @include tablet{
+                @include subheader_tablet;
+            }
+            @include desktop{
+                @include subheader_mobile;
+            }
         }
         &--articale{
             padding-top: 1rem;
             font-weight: 400;
+            @include body-copy-mobile;
+            @include tablet{
+                @include body-copy_tablet;
+            }
+            @include desktop{
+                @include body-copy_tablet;
+            }
         }
        
     }
@@ -44,6 +86,7 @@
     .about__box{
         margin-left: 2.25rem;
         margin-right: 2.25rem;
+        width: 100%;
     }
     .container{
         display: grid;
@@ -78,6 +121,13 @@
 
     &-heading{
         padding: 2rem 0 0 1.5rem;
+        @include header_mobile;
+        @include tablet{
+            @include header_tablet;
+        }
+        @include desktop{
+            @include header_tablet;
+        }
     }
   
     &-heading {

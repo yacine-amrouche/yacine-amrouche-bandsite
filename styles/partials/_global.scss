@@ -107,6 +107,13 @@ body {
     line-height: 44vh;
     padding-left: 1rem;
     padding-right: 1rem;
+    @include header_mobile;
+  }
+  @include tablet{
+    @include page-tablet;
+  }
+  @include desktop{
+    @include page-tablet;
   }
 }
 
@@ -116,15 +123,28 @@ body {
     padding-top: 2rem;
     font-family: $font-family;
     
-    @include footer-body;
     &--heading{
         font-weight: 700;
         font-size: $headline-before-mobile;
         padding: 2rem 0 2rem 1rem;
+        @include subheader_mobile;
+        @include tablet{
+            @include subheader_tablet;
+        }
+        @include desktop{
+            @include subheader_tablet;
+        }
     }
 
     &__container{
-        @include subheader_mobile;
+        @include footer-copy-mobile;
+        @include tablet{
+            @include footer-body-tablet;
+        }
+        @include desktop{
+            @include footer-body-tablet;
+        }
+
         &--icon{
             display: inline;
             margin: 1rem;
@@ -162,11 +182,12 @@ body {
         flex-direction: row;
         align-items: center;
         
+        
     }
     .footer__logo{
         position: relative;
         bottom: 19rem;
-        left: 42rem;
+        left: 38rem;
     }
     .footer__copy{
         position: relative;

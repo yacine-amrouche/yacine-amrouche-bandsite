@@ -93,6 +93,17 @@ body {
   line-height: 44vh;
   padding-left: 1rem;
   padding-right: 1rem;
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  .hero {
+    font-size: 3.75rem;
+  }
+}
+@media (min-width: 1279px) {
+  .hero {
+    font-size: 3.75rem;
+  }
 }
 
 .footer {
@@ -100,17 +111,41 @@ body {
   color: #ffffff;
   padding-top: 2rem;
   font-family: "Avenir LT Pro", sans-serif;
-  font-size: 14px;
-  line-height: 20px;
 }
 .footer--heading {
   font-weight: 700;
   font-size: 24px;
   padding: 2rem 0 2rem 1rem;
-}
-.footer__container {
   font-size: 0.875rem;
   line-height: 1.375rem;
+}
+@media (min-width: 768px) {
+  .footer--heading {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+@media (min-width: 1279px) {
+  .footer--heading {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+.footer__container {
+  font-size: 0.813rem;
+  line-height: 1.125rem;
+}
+@media (min-width: 768px) {
+  .footer__container {
+    font-size: 0.875rem;
+    line-height: 1, 25rem;
+  }
+}
+@media (min-width: 1279px) {
+  .footer__container {
+    font-size: 0.875rem;
+    line-height: 1, 25rem;
+  }
 }
 .footer__container--icon {
   display: inline;
@@ -146,7 +181,7 @@ body {
   .footer__logo {
     position: relative;
     bottom: 19rem;
-    left: 42rem;
+    left: 38rem;
   }
   .footer__copy {
     position: relative;
@@ -179,33 +214,119 @@ body {
 .about__heading {
   margin-top: 2rem;
   padding-bottom: 1rem;
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  .about__heading {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+}
+@media (min-width: 1279px) {
+  .about__heading {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
 }
 .about__container {
   font-size: 0.875rem;
   line-height: 1.375rem;
 }
+@media (min-width: 768px) {
+  .about__container {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+@media (min-width: 1279px) {
+  .about__container {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
 .about__container--img {
   width: 100%;
 }
 .about__container--paragraph {
-  font-size: 0.875rem;
-  line-height: 1.375rem;
   font-weight: 700;
   padding-top: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+}
+@media (min-width: 768px) {
+  .about__container--paragraph {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+@media (min-width: 1279px) {
+  .about__container--paragraph {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+.about__container--paragraph-sub {
+  font-size: 0.813rem;
+  line-height: 1.125rem;
+}
+@media (min-width: 768px) {
+  .about__container--paragraph-sub {
+    font-size: 0.875;
+    line-height: 1.25rem;
+    font-weight: 400;
+  }
+}
+@media (min-width: 768px) {
+  .about__container--paragraph-sub {
+    font-size: 0.875;
+    line-height: 1.25rem;
+    font-weight: 400;
+  }
 }
 .about__container-titele {
   padding-top: 1.5rem;
   font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+}
+@media (min-width: 768px) {
+  .about__container-titele {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+@media (min-width: 1279px) {
+  .about__container-titele {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
 }
 .about__container--articale {
   padding-top: 1rem;
   font-weight: 400;
+  font-size: 0.813rem;
+  line-height: 1.125rem;
+}
+@media (min-width: 768px) {
+  .about__container--articale {
+    font-size: 0.875;
+    line-height: 1.25rem;
+    font-weight: 400;
+  }
+}
+@media (min-width: 1279px) {
+  .about__container--articale {
+    font-size: 0.875;
+    line-height: 1.25rem;
+    font-weight: 400;
+  }
 }
 
 @media (min-width: 768px) {
   .about__box {
     margin-left: 2.25rem;
     margin-right: 2.25rem;
+    width: 100%;
   }
   .container {
     display: grid;
@@ -243,10 +364,22 @@ body {
 }
 .gallery-heading {
   padding: 2rem 0 0 1.5rem;
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  .gallery-heading {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+}
+@media (min-width: 1279px) {
+  .gallery-heading {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
 }
 .gallery-heading {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 2.5rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
