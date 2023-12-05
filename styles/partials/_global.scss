@@ -27,7 +27,9 @@
 
 body {
   font-family: $font-family;
+
 }
+
 
 .header {
   background-color: $back-color;
@@ -37,6 +39,9 @@ body {
   padding-top: $headline-before-mobile;
   padding-bottom: $headline-after-mobile;
   text-align: center;
+ 
+
+  
 
   &__logo {
     @include logo;
@@ -54,12 +59,18 @@ body {
     &--item {
       width: 50%;
       font-weight: 400;
-
+      color: $text-color;
+      a{
+        color: $text-color;
+      }
+    
+      
       &-underline {
         border-bottom: 4px solid $text-color;
         font-weight: 600;
         padding-left: 0;
         margin-bottom: -1rem;
+        color: $text-color;
        
       }
      
