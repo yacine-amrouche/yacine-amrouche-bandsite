@@ -1,0 +1,115 @@
+@use "./partials/global" as *;
+@use "./partials/variables" as *;
+@use "./partials/mixins" as *;
+
+
+
+.hero-shows {
+    background-image: url(../assets/Images/Photo-gallery-3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 44vh;
+    width: 100%;
+      
+    
+    &__heading {
+      font-weight: bold;
+      color: $text-color;
+      padding-top: 1rem;
+      padding-left: 3rem;
+      padding-right: 1rem;
+      font-size: 1.5rem;
+      @include header_mobile;
+      @include tablet{
+        position: absolute;
+        top: 11rem;
+        .shows__subhead{
+          @include subheader_tablet;
+        }
+        .shows__heading{
+          @include header_tablet;
+        }
+      }
+
+    }
+    @include tablet{
+      
+      @include page-tablet;
+    }
+    @include desktop{
+      @include page-tablet;
+    }
+   .shows__subhead{
+    font-weight: 400;
+    @include subheader_mobile;
+   
+   }
+   &-video{
+    position: absolute;
+    left: 1rem;
+    top: 14rem;
+    @include tablet{
+      position: absolute;
+      left: 25rem;
+      top: 15rem;
+      width: 60%;
+    }
+  
+    }
+  
+    }
+   
+   .shows__heading{
+    font-size: 1.5rem;
+    
+  }
+
+
+
+  .booking{
+    width: 100%;
+    &__title{
+        margin-top: 1.5rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+    }
+    &__tablet{
+        display: none;
+        @include tablet{
+            display: flex;
+            flex-direction: row;
+            align-items: center; 
+            padding-left: 1rem;
+        }
+        .show__header{
+            @include tablet{
+             width: 20%;
+            }
+            &--location{
+                width: 40%;
+            }
+        }
+
+    }
+
+  }
+  .show{
+    padding: 1rem 1rem;
+    @include tablet{
+        padding: 0, 1.5rem;
+        display: flex;
+        align-items: center;
+        
+      
+    }
+    &__header--mobile{
+        color: blue;
+        padding-top: 1rem ;
+        padding-bottom: 1rem;
+        @include tablet{
+            display: none;
+        }
+    }
+  }
+ 
+ 

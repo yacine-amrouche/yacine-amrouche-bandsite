@@ -85,32 +85,6 @@ body {
   }
 }
 
-.hero {
-  background-image: url(../assets/Images/hero-bio.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 44vh;
-  width: 100%;
-}
-.hero__heading {
-  font-weight: bold;
-  color: #ffffff;
-  line-height: 44vh;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 2.5rem;
-}
-@media (min-width: 768px) {
-  .hero {
-    font-size: 3.75rem;
-  }
-}
-@media (min-width: 1279px) {
-  .hero {
-    font-size: 3.75rem;
-  }
-}
-
 .footer {
   background-color: #323232;
   color: #ffffff;
@@ -205,37 +179,30 @@ body {
     left: 67rem;
   }
 }
-.form__container {
+.hero {
+  background-image: url(../assets/Images/hero-bio.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 44vh;
   width: 100%;
-  padding: 0.75rem;
-  display: flex;
-  flex-direction: column;
 }
-.form__container .container__name {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.hero__heading {
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 44vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 2.5rem;
 }
-.form__container .container__name--img {
-  padding-right: 4px;
+@media (min-width: 768px) {
+  .hero {
+    font-size: 3.75rem;
+  }
 }
-
-.name-box {
-  border-radius: 4px;
-  width: 100%;
-  height: 36px;
-}
-
-.msg-box {
-  border-radius: 4px;
-  width: 100%;
-  height: 38px;
-}
-
-.img {
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
+@media (min-width: 1279px) {
+  .hero {
+    font-size: 3.75rem;
+  }
 }
 
 .about {
@@ -406,7 +373,7 @@ body {
   }
 }
 .gallery-heading {
-  padding: 2rem 0 0 1.5rem;
+  padding: 2rem 1.5rem;
   font-size: 2.5rem;
 }
 @media (min-width: 768px) {
@@ -434,4 +401,135 @@ body {
     padding-right: 1rem;
     padding-left: 1rem;
   }
+}
+
+.form {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 768px) {
+  .form__container--box {
+    width: 63vw;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.form--heading {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.container__comment .label {
+  padding-left: 2.2rem;
+  color: #e1e1e1;
+}
+.container__comment--name {
+  display: flex;
+  flex-direction: row;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+.container__comment--name .img {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+.container__comment--name .name-box {
+  width: 100%;
+  margin-left: 4px;
+  border-radius: 4px;
+  height: 36px;
+  font-family: "Avenir LT Pro", sans-serif;
+}
+.container__comment--msg {
+  display: flex;
+  flex-direction: row;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+.container__comment--msg .img {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+.container__comment--msg .msg-box {
+  margin-left: 4px;
+  border-radius: 4px;
+  height: 7.5rem;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-family: "Avenir LT Pro", sans-serif;
+  width: 100%;
+}
+.container__comment--btn {
+  display: flex;
+  flex-direction: row;
+}
+.container__comment--btn .img_blk {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  border: white;
+}
+@media (min-width: 768px) {
+  .container__comment--btn .img_blk {
+    width: 50%;
+    margin-left: 17rem;
+  }
+}
+.container__comment--btn button {
+  background-color: #323232;
+  color: #ffffff;
+  border-radius: 4px;
+  height: 46px;
+  font-family: "Avenir LT Pro", sans-serif;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.feedback {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 768px) {
+  .feedback {
+    width: 63vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.feedback__container {
+  display: flex;
+  flex-direction: row;
+  border-top: 2px solid #e1e1e1;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.feedback__container--img {
+  border-radius: 50%;
+  width: 107px;
+  height: 36px;
+  background-color: #e1e1e1;
+}
+.feedback__container--header {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  padding-left: 4px;
+}
+.feedback__container--header .feedback__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.feedback__container--header .feedback__header--name {
+  font-weight: 600;
+}
+.feedback__container--header .feedback__header--date {
+  color: #e1e1e1;
+}
+.feedback__container--header .feedback__text {
+  font-weight: 300;
 }/*# sourceMappingURL=bio.css.map */

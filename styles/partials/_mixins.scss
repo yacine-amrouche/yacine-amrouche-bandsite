@@ -82,3 +82,8 @@
     margin-right: auto;
     margin-left: auto;
   }
+  @mixin flex{
+    display: flex;
+    flex-direction: row;
+  }
+  

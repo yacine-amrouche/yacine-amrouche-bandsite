@@ -2,6 +2,29 @@
 @use "./partials/variables" as *;
 @use "./partials/mixins" as *;
 
+
+
+.hero {
+    background-image: url(../assets/Images/hero-bio.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 44vh;
+    width: 100%;
+    &__heading {
+      font-weight: bold;
+      color: $text-color;
+      line-height: 44vh;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      @include header_mobile;
+    }
+    @include tablet{
+      @include page-tablet;
+    }
+    @include desktop{
+      @include page-tablet;
+    }
+  }
 .about{
     padding-left: 1rem;
     padding-right: 1rem;
@@ -120,7 +143,7 @@
    
 
     &-heading{
-        padding: 2rem 0 0 1.5rem;
+        padding: 2rem  1.5rem;
         @include header_mobile;
         @include tablet{
             @include header_tablet;
@@ -146,3 +169,161 @@
       }
     }
   }
+
+
+.form{
+    padding-left:1rem;
+    padding-right: 1rem;
+    &__container--box{
+        @include tablet{
+            width: 63vw;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+  
+    &--heading{
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+    }
+}
+.container__comment{
+    .label{
+        padding-left: 2.2rem;
+        color: $form-bcolor;
+    }
+    &--name{
+        @include flex;
+        padding-top: 0.5rem; 
+        padding-bottom: 1rem;
+        .img{
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+        } 
+        .name-box{
+            width: 100%;
+            margin-left: 4px;
+            border-radius: 4px;
+            height: 36px;
+            font-family: $font-family
+        } 
+        
+     
+    }
+    &--msg{
+        @include flex;
+        padding-top: 0.5rem; 
+        padding-bottom: 1rem;
+        .img{
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+        } 
+        .msg-box{
+            margin-left: 4px;
+            border-radius: 4px;
+            height: 7.5rem;
+            padding-top: 20px;
+            padding-left: 20px;
+            font-family: $font-family;
+            width: 100%;
+        }
+ 
+        
+     
+    }
+    &--btn{
+        @include flex;
+        .img_blk{
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            border: white;
+            @include tablet{
+                width: 50%;
+                margin-left: 17rem;
+            }
+        }
+        button{
+            background-color: $back-color;
+            color: $text-color;
+            border-radius: 4px;
+            height: 46px;
+            font-family: $font-family;
+            margin-bottom: 1rem;
+            width: 100%;
+            
+        }
+    }
+
+    }
+
+.feedback{
+    padding-left:1rem;
+    padding-right: 1rem;
+    @include tablet{
+        width: 63vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__container{
+        display: flex;
+        flex-direction: row;
+        border-top: 2px solid $foto-back-color;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        &--img{
+            border-radius: 50%;
+            width: 107px;
+            height: 36px;
+            
+            background-color: $foto-back-color;
+        }
+        &--header{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+            padding-left: 4px;
+            .feedback__header{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                &--name{
+                    font-weight: 600;
+                }
+                &--date{
+                    color: $foto-back-color;
+                }
+            }
+            .feedback__text{
+                font-weight: 300;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
