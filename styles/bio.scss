@@ -198,14 +198,14 @@
         padding-bottom: 1rem;
         .img{
             border-radius: 50%;
-            width: 36px;
-            height: 36px;
+            width: 2.25rem;
+            height: 2.25rem;
         } 
         .name-box{
             width: 100%;
-            margin-left: 4px;
-            border-radius: 4px;
-            height: 36px;
+            margin-left: 0.25rem;
+            border-radius: 0.25rem;
+            height: 2.25rem;
             font-family: $font-family
         } 
         
@@ -217,15 +217,15 @@
         padding-bottom: 1rem;
         .img{
             border-radius: 50%;
-            width: 36px;
-            height: 36px;
+            width: 2.25rem;
+            height: 2.25rem;
         } 
         .msg-box{
-            margin-left: 4px;
-            border-radius: 4px;
+            margin-left: 0.25rem;
+            border-radius: 0.25rem;
             height: 7.5rem;
-            padding-top: 20px;
-            padding-left: 20px;
+            padding-top: 1.25rem;
+            padding-left: 1.25rem;
             font-family: $font-family;
             width: 100%;
         }
@@ -237,8 +237,8 @@
         @include flex;
         .img_blk{
             border-radius: 50%;
-            width: 36px;
-            height: 36px;
+            width: 2.25rem;
+            height: 2.25rem;
             border: white;
             @include tablet{
                 width: 50%;
@@ -248,8 +248,8 @@
         button{
             background-color: $back-color;
             color: $text-color;
-            border-radius: 4px;
-            height: 46px;
+            border-radius: 0.25rem;
+            height: 2.875rem;
             font-family: $font-family;
             margin-bottom: 1rem;
             width: 100%;
@@ -270,13 +270,16 @@
     &__container{
         display: flex;
         flex-direction: row;
-        border-top: 2px solid $foto-back-color;
+        border-top: 0.125rem solid $foto-back-color;
         padding-top: 1rem;
         padding-bottom: 1rem;
         &--img{
             border-radius: 50%;
-            width: 107px;
-            height: 36px;
+            width: 6.688rem;
+            height: 2.25rem;
+            @include tablet{
+                width: 5.438rem;
+            }
             
             background-color: $foto-back-color;
         }
@@ -286,7 +289,7 @@
             align-content: center;
             justify-content: flex-start;
             flex-wrap: nowrap;
-            padding-left: 4px;
+            padding-left: 0.25rem;
             .feedback__header{
                 display: flex;
                 flex-direction: row;

@@ -431,14 +431,14 @@ body {
 }
 .container__comment--name .img {
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
+  width: 2.25rem;
+  height: 2.25rem;
 }
 .container__comment--name .name-box {
   width: 100%;
-  margin-left: 4px;
-  border-radius: 4px;
-  height: 36px;
+  margin-left: 0.25rem;
+  border-radius: 0.25rem;
+  height: 2.25rem;
   font-family: "Avenir LT Pro", sans-serif;
 }
 .container__comment--msg {
@@ -449,15 +449,15 @@ body {
 }
 .container__comment--msg .img {
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
+  width: 2.25rem;
+  height: 2.25rem;
 }
 .container__comment--msg .msg-box {
-  margin-left: 4px;
-  border-radius: 4px;
+  margin-left: 0.25rem;
+  border-radius: 0.25rem;
   height: 7.5rem;
-  padding-top: 20px;
-  padding-left: 20px;
+  padding-top: 1.25rem;
+  padding-left: 1.25rem;
   font-family: "Avenir LT Pro", sans-serif;
   width: 100%;
 }
@@ -467,8 +467,8 @@ body {
 }
 .container__comment--btn .img_blk {
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
+  width: 2.25rem;
+  height: 2.25rem;
   border: white;
 }
 @media (min-width: 768px) {
@@ -480,8 +480,8 @@ body {
 .container__comment--btn button {
   background-color: #323232;
   color: #ffffff;
-  border-radius: 4px;
-  height: 46px;
+  border-radius: 0.25rem;
+  height: 2.875rem;
   font-family: "Avenir LT Pro", sans-serif;
   margin-bottom: 1rem;
   width: 100%;
@@ -501,15 +501,20 @@ body {
 .feedback__container {
   display: flex;
   flex-direction: row;
-  border-top: 2px solid #e1e1e1;
+  border-top: 0.125rem solid #e1e1e1;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 .feedback__container--img {
   border-radius: 50%;
-  width: 107px;
-  height: 36px;
+  width: 6.688rem;
+  height: 2.25rem;
   background-color: #e1e1e1;
+}
+@media (min-width: 768px) {
+  .feedback__container--img {
+    width: 5.438rem;
+  }
 }
 .feedback__container--header {
   display: flex;
@@ -517,7 +522,7 @@ body {
   align-content: center;
   justify-content: flex-start;
   flex-wrap: nowrap;
-  padding-left: 4px;
+  padding-left: 0.25rem;
 }
 .feedback__container--header .feedback__header {
   display: flex;
