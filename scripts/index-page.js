@@ -95,14 +95,20 @@ function renderComments(comments, selector){
 
     const name = document.querySelector("#name");
     const comment = document.querySelector('#comment');
-    const date = document.querySelector('.feedback__header--date');
+    
+
+
+    
+
+
+   
 
 
     if (name.value === "" || comment.value === "") {
         alert("Please fill required fields");
         return;
     }
-    commentArray.unshift({name: name.value, date: date.value, comment: comment.value});
+    commentArray.unshift({name: name.value, comment: comment.value});
 
     renderComments(commentArray, '.feedback');
 

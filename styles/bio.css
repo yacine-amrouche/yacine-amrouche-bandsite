@@ -183,6 +183,7 @@ body {
   width: 100%;
 }
 .hero__heading {
+  background-color: rgba(0, 0, 0, 0.5);
   font-weight: bold;
   color: #ffffff;
   line-height: 44vh;
@@ -354,7 +355,7 @@ body {
 
 .gallery {
   padding: 0 1rem;
-  background-color: #e1e1e1;
+  background-color: #fafafa;
 }
 @media (min-width: 768px) {
   .gallery {

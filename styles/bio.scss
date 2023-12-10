@@ -11,6 +11,7 @@
     height: 44vh;
     width: 100%;
     &__heading {
+        background-color: rgba(0, 0, 0, 0.5);
       font-weight: bold;
       color: $text-color;
       line-height: 44vh;
@@ -133,7 +134,7 @@
 
 .gallery {
     padding: 0 1rem;
-    background-color: $foto-back-color;
+    background-color: #fafafa;
     @include tablet{
         @include size-between-tablet;
        }

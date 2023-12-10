@@ -186,7 +186,7 @@ body {
   font-weight: bold;
   color: #ffffff;
   padding-top: 1rem;
-  padding-left: 3rem;
+  padding-left: 13rem;
   padding-right: 1rem;
   font-size: 1.5rem;
   font-size: 2.5rem;
@@ -194,7 +194,7 @@ body {
 @media (min-width: 768px) {
   .hero-shows__heading {
     position: absolute;
-    top: 11rem;
+    top: 13rem;
   }
   .hero-shows__heading .shows__subhead {
     font-size: 1.5rem;
@@ -222,15 +222,15 @@ body {
 }
 .hero-shows-video {
   position: absolute;
-  left: 1rem;
-  top: 14rem;
+  left: 13rem;
+  top: 13rem;
 }
 @media (min-width: 768px) {
   .hero-shows-video {
     position: absolute;
-    left: 25rem;
+    left: 34rem;
     top: 15rem;
-    width: 60%;
+    width: 50%;
   }
 }
 

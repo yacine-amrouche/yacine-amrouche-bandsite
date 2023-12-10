@@ -16,13 +16,13 @@
       font-weight: bold;
       color: $text-color;
       padding-top: 1rem;
-      padding-left: 3rem;
+      padding-left: 13rem;
       padding-right: 1rem;
       font-size: 1.5rem;
       @include header_mobile;
       @include tablet{
         position: absolute;
-        top: 11rem;
+        top: 13rem;
         .shows__subhead{
           @include subheader_tablet;
         }
@@ -46,13 +46,13 @@
    }
    &-video{
     position: absolute;
-    left: 1rem;
-    top: 14rem;
+    left: 13rem;
+    top: 13rem;
     @include tablet{
       position: absolute;
-      left: 25rem;
+      left: 34rem;
       top: 15rem;
-      width: 60%;
+      width: 50%;
     }
   
     }

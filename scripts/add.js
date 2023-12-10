@@ -1,1 +1,0 @@
-let add = renderComments(commentArray);
