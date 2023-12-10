@@ -62,10 +62,6 @@ body {
   margin-bottom: -1rem;
   color: #ffffff;
 }
-.header .navbar__list--item-hover:hover {
-  border-bottom: 0.2rem solid #e1e1e1;
-  margin-bottom: -2.5rem;
-}
 @media (min-width: 768px) {
   .header {
     display: flex;

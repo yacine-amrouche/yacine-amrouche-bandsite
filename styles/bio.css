@@ -62,10 +62,6 @@ body {
   margin-bottom: -1rem;
   color: #ffffff;
 }
-.header .navbar__list--item-hover:hover {
-  border-bottom: 0.2rem solid #e1e1e1;
-  margin-bottom: -2.5rem;
-}
 @media (min-width: 768px) {
   .header {
     display: flex;
@@ -404,6 +400,7 @@ body {
 }
 
 .form {
+  cursor: pointer;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -478,6 +475,7 @@ body {
   }
 }
 .container__comment--btn button {
+  cursor: pointer;
   background-color: #323232;
   color: #ffffff;
   border-radius: 0.25rem;
@@ -507,8 +505,8 @@ body {
 }
 .feedback__container--img {
   border-radius: 50%;
-  width: 6.688rem;
-  height: 2.25rem;
+  max-width: 6.688rem;
+  max-height: 2.25rem;
   background-color: #e1e1e1;
 }
 @media (min-width: 768px) {

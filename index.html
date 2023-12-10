@@ -17,7 +17,7 @@
           <li class="navbar__list--item navbar__list--item-underline"><a href="./index.html">Biography</a>
            
           </li>
-          <li class="navbar__list--item navbar__list--item-hover"><a href="./pages/shows.html">Shows</a></li>
+          <li class="navbar__list--item"><a href="./pages/shows.html">Shows</a></li>
         </ul>
       </nav>
     </header>
@@ -127,7 +127,7 @@
                         NAME
                         <div class="container__comment--name">
                           <img class="img" src="./assets/Images/Mohan-muruge.jpg" alt="">
-                          <input  type="text" placeholder="   Enter your name" class="name-box">
+                          <input  type="text" name="name" placeholder="   Enter your name" class="name-box" id="name">
                         </div>
                       </label>
                         
@@ -136,12 +136,12 @@
                             COMMENT
                           <div class="container__comment--msg">
                            <i class="img img_blk"></i>
-                          <textarea placeholder="Add a new comment.."   class="msg-box"></textarea>
+                          <textarea name="comment" placeholder="Add a new comment.."   class="msg-box" id="comment"></textarea>
                            </label>
                           </div>
                           <div class="container__comment--btn">
                             <i class="img img_blk"></i>
-                            <button >COMMENT</button>
+                            <button type="submit" id="submit-btn">COMMENT</button>
                           </div>
                         </div>
                       </form>
@@ -153,7 +153,7 @@
 <section class="feedback">
              <div class="feedback__container">
               <div class="feedback__container--img">
-               <i></i>
+               <i class="icon"></i>
               </div>
                
               <div class="feedback__container--header">
@@ -297,5 +297,6 @@
         </div>
       </div>
     </footer>
+    <script src="./scripts/index-page.js"></script>
   </body>
 </html>

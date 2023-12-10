@@ -172,6 +172,7 @@
 
 
 .form{
+    cursor: pointer;
     padding-left:1rem;
     padding-right: 1rem;
     &__container--box{
@@ -246,6 +247,7 @@
             }
         }
         button{
+            cursor: pointer;
             background-color: $back-color;
             color: $text-color;
             border-radius: 0.25rem;
@@ -275,8 +277,8 @@
         padding-bottom: 1rem;
         &--img{
             border-radius: 50%;
-            width: 6.688rem;
-            height: 2.25rem;
+            max-width: 6.688rem;
+            max-height: 2.25rem;
             @include tablet{
                 width: 5.438rem;
             }
