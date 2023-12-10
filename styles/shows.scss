@@ -22,7 +22,7 @@
       @include header_mobile;
       @include tablet{
         position: absolute;
-        top: 13rem;
+        top: 10rem;
         .shows__subhead{
           @include subheader_tablet;
         }
@@ -51,7 +51,7 @@
     @include tablet{
       position: absolute;
       left: 34rem;
-      top: 15rem;
+      top: 10rem;
       width: 50%;
     }
   

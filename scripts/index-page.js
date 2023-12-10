@@ -22,7 +22,7 @@ function renderComments(comments, selector){
     const commentsSelection = document.querySelector(selector);
 
     commentsSelection.replaceChildren();
-   
+   oh
 
     for (let i = 0; i < comments.length; i++){
         const item = comments[i];
@@ -95,13 +95,9 @@ function renderComments(comments, selector){
 
     const name = document.querySelector("#name");
     const comment = document.querySelector('#comment');
+    const  currentDate = new Date(Date.now());
     
 
-
-    
-
-
-   
 
 
     if (name.value === "" || comment.value === "") {
