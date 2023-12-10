@@ -74,9 +74,12 @@
     &__title{
         margin-top: 1.5rem;
         padding-bottom: 1rem;
-        padding-top: 1rem;
-        padding-left: 10rem;
-    }
+        @include tablet{
+          padding-top: 1rem;
+          padding-left: 10rem;
+      }
+        }
+       
     &__tablet{
         display: none;
         @include tablet{
@@ -102,10 +105,11 @@
 
   
   .show{
-    margin-left: 22rem;
+   
     padding: 1rem 1rem;
     border-bottom: 0.125rem  solid $foto-back-color;
     @include tablet{
+      margin-left: 22rem;
         padding: 0, 1.5rem;
         display: flex;
         align-items: center;
@@ -121,6 +125,7 @@
         }
     }
     &__date{
+      font-weight: 600;
       @include tablet{
         width: 25%;
         font-weight: 600;

@@ -250,8 +250,12 @@ body {
 .booking__title {
   margin-top: 1.5rem;
   padding-bottom: 1rem;
-  padding-top: 1rem;
-  padding-left: 10rem;
+}
+@media (min-width: 768px) {
+  .booking__title {
+    padding-top: 1rem;
+    padding-left: 10rem;
+  }
 }
 .booking__tablet {
   display: none;
@@ -277,12 +281,12 @@ body {
 }
 
 .show {
-  margin-left: 22rem;
   padding: 1rem 1rem;
   border-bottom: 0.125rem solid #e1e1e1;
 }
 @media (min-width: 768px) {
   .show {
+    margin-left: 22rem;
     padding: 0, 1.5rem;
     display: flex;
     align-items: center;
@@ -297,6 +301,9 @@ body {
   .show__header--mobile {
     display: none;
   }
+}
+.show__date {
+  font-weight: 600;
 }
 @media (min-width: 768px) {
   .show__date {
