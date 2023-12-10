@@ -22,7 +22,7 @@ function renderComments(comments, selector){
     const commentsSelection = document.querySelector(selector);
 
     commentsSelection.replaceChildren();
-   oh
+   
 
     for (let i = 0; i < comments.length; i++){
         const item = comments[i];
@@ -57,13 +57,17 @@ function renderComments(comments, selector){
 
         const feedbackHeaderName = document.createElement('p');
         feedbackHeaderName.classList.add('feedback__header--name');
+        feedbackHeader.appendChild(feedbackHeaderName);
+
+        
 
         const feedbackHeaderDate = document.createElement('p');
         feedbackHeaderDate.classList.add('feedback__header--date');
-
-
-        feedbackHeader.appendChild(feedbackHeaderName);
         feedbackHeader.appendChild(feedbackHeaderDate);
+
+
+        
+        
 
 
         const feedbackText = document.createElement('p');
@@ -95,8 +99,10 @@ function renderComments(comments, selector){
 
     const name = document.querySelector("#name");
     const comment = document.querySelector('#comment');
-    const  currentDate = new Date(Date.now());
     
+    const  currentDate = new Date(Date.now());
+     const dateDay = currentDate.toLocaleDateString();
+
 
 
 
@@ -104,7 +110,7 @@ function renderComments(comments, selector){
         alert("Please fill required fields");
         return;
     }
-    commentArray.unshift({name: name.value, comment: comment.value});
+    commentArray.unshift({name: name.value, date: dateDay, comment: comment.value});
 
     renderComments(commentArray, '.feedback');
 

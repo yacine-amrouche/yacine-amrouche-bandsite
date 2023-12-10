@@ -194,7 +194,7 @@ body {
 @media (min-width: 768px) {
   .hero-shows__heading {
     position: absolute;
-    top: 13rem;
+    top: 10rem;
   }
   .hero-shows__heading .shows__subhead {
     font-size: 1.5rem;
@@ -229,7 +229,7 @@ body {
   .hero-shows-video {
     position: absolute;
     left: 34rem;
-    top: 15rem;
+    top: 10rem;
     width: 50%;
   }
 }
