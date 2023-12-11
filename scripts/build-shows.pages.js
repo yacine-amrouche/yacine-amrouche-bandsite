@@ -136,6 +136,20 @@ function renderShow(Shows, selector){
 
 
 
+        show.addEventListener('click', function (e){
+            e.preventDefault;
+            let getArray = document.getElementsByClassName('show');
+    
+            show.classList.add('show__selected');
+
+            
+
+    
+        });
+        
+
+
+
 
     }
 }
@@ -146,21 +160,7 @@ renderShow(showArray, '.booking');
 
 
 
-function render(row){
-    for (let i = 0; i < row.length; i++){
-
-        const item = row[i];
-        
-        
-        }
-        let result = render('.booking');
-        console.log(result);
-    }
-    document.addEventListener('click', function (e){
-        item.classList.add('colorBack');
-        colorBack.backGroundColor = '#afafaf';
-
-    });
     
+   
 
     

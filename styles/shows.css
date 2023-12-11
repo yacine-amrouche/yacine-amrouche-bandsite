@@ -293,6 +293,9 @@ body {
     align-items: center;
   }
 }
+.show__selected {
+  background-color: #e1e1e1;
+}
 .show__header--mobile {
   color: #e1e1e1;
   padding-top: 1rem;

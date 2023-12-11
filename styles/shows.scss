@@ -122,6 +122,9 @@
         
       
     }
+    &__selected{
+      background-color: $form-bcolor;
+    }
     &__header--mobile{
         color: $foto-back-color;
         padding-top: 1rem;
