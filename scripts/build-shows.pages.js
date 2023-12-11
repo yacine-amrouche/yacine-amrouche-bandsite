@@ -144,3 +144,23 @@ renderShow(showArray, '.booking');
 
 
 
+
+
+function render(row){
+    for (let i = 0; i < row.length; i++){
+
+        const item = row[i];
+        
+        
+        }
+        let result = render('.booking');
+        console.log(result);
+    }
+    document.addEventListener('click', function (e){
+        item.classList.add('colorBack');
+        colorBack.backGroundColor = '#afafaf';
+
+    });
+    
+
+    

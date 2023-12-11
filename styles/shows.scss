@@ -87,9 +87,11 @@
             flex-direction: row;
             align-items: center; 
             padding-left: 1rem;
-            color: $foto-back-color;
+            color: $silver;
             justify-content: space-evenly;
-            padding-left: 20rem;
+            padding-left: 18.313rem;
+            margin-right: 14.25rem;
+            
         }
         }
         .show__header{
@@ -108,6 +110,10 @@
    
     padding: 1rem 1rem;
     border-bottom: 0.125rem  solid $foto-back-color;
+    &:hover{
+      transform: scale(1.1);
+      background-color: $back-txt-color;
+    }
     @include tablet{
       margin-left: 22rem;
         padding: 0, 1.5rem;
@@ -155,5 +161,4 @@
       
     }
   }
- 
- 
+

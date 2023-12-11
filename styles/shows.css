@@ -262,9 +262,10 @@ body {
     flex-direction: row;
     align-items: center;
     padding-left: 1rem;
-    color: #e1e1e1;
+    color: #afafaf;
     justify-content: space-evenly;
-    padding-left: 20rem;
+    padding-left: 18.313rem;
+    margin-right: 14.25rem;
   }
 }
 @media (min-width: 768px) {
@@ -279,6 +280,10 @@ body {
 .show {
   padding: 1rem 1rem;
   border-bottom: 0.125rem solid #e1e1e1;
+}
+.show:hover {
+  transform: scale(1.1);
+  background-color: #fafafa;
 }
 @media (min-width: 768px) {
   .show {

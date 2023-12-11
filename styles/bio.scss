@@ -202,6 +202,11 @@
             border-radius: 50%;
             width: 2.25rem;
             height: 2.25rem;
+            @include tablet{
+                border-radius: 50%;
+            width: 2.875rem;
+            height: 2.875rem;
+            }
         } 
         .name-box{
             width: 100%;
@@ -221,6 +226,10 @@
             border-radius: 50%;
             width: 2.25rem;
             height: 2.25rem;
+            @include tablet{
+                width: 2.875rem;
+                height: 2.875rem;
+            }
         } 
         .msg-box{
             margin-left: 0.25rem;
@@ -278,10 +287,11 @@
         padding-bottom: 1rem;
         &--img{
             border-radius: 50%;
-            max-width: 6.688rem;
-            max-height: 2.25rem;
+            width: 2.25rem;
+            height:  2.25rem;
             @include tablet{
-                width: 5.438rem;
+                width: 2.875rem;
+                height:  2.875rem;
             }
             
             background-color: $foto-back-color;
