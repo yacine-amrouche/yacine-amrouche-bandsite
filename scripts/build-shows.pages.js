@@ -137,9 +137,9 @@ function renderShow(Shows, selector){
 
 
         show.addEventListener('click', function (e){
-            e.preventDefault;
+         
             let getArray = document.getElementsByClassName('show');
-    
+            e.preventDefault;
             show.classList.add('show__selected');
 
             
