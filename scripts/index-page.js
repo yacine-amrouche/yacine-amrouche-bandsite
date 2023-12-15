@@ -64,7 +64,7 @@
           
             feedbackHeaderName.textContent = commentObject.name;
             feedbackText.textContent = commentObject.comment;
-            feedbackHeaderDate.innerText = commentObject.timestamp;
+            feedbackHeaderDate.innerText =  new Date(commentObject.timestamp).toDateString();
 
     
     
@@ -92,10 +92,48 @@
 
         displayComments();
 
+         document.querySelector("#submit-btn").addEventListener("click", async (e) => {
+    e.preventDefault();
+
+     const newName = document.querySelector("#name");
+     const newComment = document.querySelector('#comment');
+     const newDate = document.querySelector('.feedback__header--date');
+
+
+
+     newName.innerText = name;
+     newComment.innerText = comment;
+
+     const myNewComment = {
+        name: e.target.name.value,
+        comment: e.comment.value,
+     }
+
+
+     if (name.value === "" || comment.value === "") {
+         alert("Please fill required fields");
+         return;
+     }
+    await axios.post(backend, myNewComment);
+    
+
+    displayComments();
+
+
+
+
+     name.value = "";
+     comment.value = "";
+
+
+  });
+
 
       
 
-        
+  //commentArray.unshift({name: name.value, date: date.value, comment: comment.value});
+
+  //renderComments(commentArray, '.feedback');    
     
 
    

@@ -99,12 +99,34 @@ const backend = new BandSiteApi('48bc6bc4-78d6-4b68-a757-b1dff5a33d60');
     
     
     
-            showDate.textContent = showObject.date;
+            showDate.textContent = new Date(showObject.date).toDateString();
             showVenue.textContent = showObject.place;
             showLocation.textContent = showObject.location;
     
     
             booking.appendChild(show);
+
+        
+
+
+
+            show.addEventListener('click', function (e){
+
+                let showDay = document.getElementsByClassName('show');
+
+        
+                   if (show.classList.contains('class')){
+                   
+
+                   }else{ show.classList.remove('show__selected')
+                    show.classList.add('show__selected')
+                   }
+
+                
+    
+            });
+      
+            
     
 
 
@@ -119,18 +141,27 @@ const backend = new BandSiteApi('48bc6bc4-78d6-4b68-a757-b1dff5a33d60');
 
                 }
 
-                
+         
 
-              
+            
+
+                    
 
             }
             catch(error){
                 console.log.error(error);
                
             }
+
+            
         }
 
         displayShows();
+
+      
+
+      
+     
 
 
        
