@@ -162,14 +162,20 @@
   
     @include tablet {
       &__container--item {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        padding-bottom: 1rem;  
-        padding-right: 1rem;
-        padding-left: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.625rem;
+        padding: 0 1.625rem;
       }
+      .container--img{
+        width: 30%;
+      }
+
     }
   }
+ 
 
 
 .form{

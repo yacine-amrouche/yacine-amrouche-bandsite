@@ -162,6 +162,7 @@ body {
     position: relative;
     bottom: 19rem;
     left: 38rem;
+    display: inline-block;
   }
   .footer__copy {
     position: relative;

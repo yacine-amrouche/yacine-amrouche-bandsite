@@ -4,6 +4,8 @@
         const backend = new BandSiteApi('48bc6bc4-78d6-4b68-a757-b1dff5a33d60');
 
        const feedback = document.querySelector('.feedback');
+       const commentAPI = 'https://project-1-api.herokuapp.com';
+       
 
 
 
@@ -92,21 +94,21 @@
 
         displayComments();
 
-         document.querySelector("#submit-btn").addEventListener("click", async (e) => {
+    document.querySelector("#submit-btn").addEventListener("click", async (e) => {
     e.preventDefault();
 
-     const newName = document.querySelector("#name");
-     const newComment = document.querySelector('#comment');
-     const newDate = document.querySelector('.feedback__header--date');
+     const newName = document.querySelector("#name").value;
+     const newComment = document.querySelector('#comment').value;
+    
 
 
 
-     newName.innerText = name;
-     newComment.innerText = comment;
+     newName.textContent = name;
+     newComment.textContent = comment;
 
      const myNewComment = {
-        name: e.target.name.value,
-        comment: e.comment.value,
+        name: newName,
+        comment: newComment,
      }
 
 
@@ -114,7 +116,7 @@
          alert("Please fill required fields");
          return;
      }
-    await axios.post(backend, myNewComment);
+    await axios.post(commentAPI, myNewComment);
     
 
     displayComments();

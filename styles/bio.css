@@ -162,6 +162,7 @@ body {
     position: relative;
     bottom: 19rem;
     left: 38rem;
+    display: inline-block;
   }
   .footer__copy {
     position: relative;
@@ -392,11 +393,15 @@ body {
 }
 @media (min-width: 768px) {
   .gallery__container--item {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding-bottom: 1rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.625rem;
+    padding: 0 1.625rem;
+  }
+  .gallery .container--img {
+    width: 30%;
   }
 }
 

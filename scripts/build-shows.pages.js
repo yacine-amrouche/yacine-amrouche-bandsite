@@ -116,9 +116,9 @@ const backend = new BandSiteApi('48bc6bc4-78d6-4b68-a757-b1dff5a33d60');
 
         
                    if (show.classList.contains('class')){
-                   
+                    show.classList.remove('show__selected')
 
-                   }else{ show.classList.remove('show__selected')
+                   }else{
                     show.classList.add('show__selected')
                    }
 
