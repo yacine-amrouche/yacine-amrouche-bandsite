@@ -109,23 +109,23 @@ const backend = new BandSiteApi('48bc6bc4-78d6-4b68-a757-b1dff5a33d60');
         
 
 
-
-            show.addEventListener('click', function (e){
-
-                let showDay = document.getElementsByClassName('show');
-
-        
-                   if (show.classList.contains('class')){
-                    show.classList.remove('show__selected')
-
-                   }else{
-                    show.classList.add('show__selected')
-                   }
-
-                
-    
-            });
-      
+  
+            show.addEventListener("click", function (e) {
+                // get items with class: show__selected
+                const selectedShows = document.getElementsByClassName("show__selected");
+            
+                // check if we have items with class: show__selected
+                if (selectedShows.length > 0) {
+                  // remove class show__selected
+                  for (let index = 0; index < selectedShows.length; index++) {
+                    const element = selectedShows[index];
+                    element.classList.remove("show__selected");
+                  }
+                }
+            
+                // add class show__selected to the clicked element
+                show.classList.add("show__selected");
+              });
             
     
 

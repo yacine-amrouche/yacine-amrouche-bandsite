@@ -22,6 +22,19 @@ class BandSiteApi {
         return comments;
       
     }
+    async postComment(newComment) {
+        const url = `${this.baseUrl}/comments/?api_key=${this.apiKey}`;
+        const response = await axios.post(url, newComment);
+    
+        return response;
+      }
+      async deleteComment(id) {
+        const url = `${this.baseUrl}/comments/${id}/?api_key=${this.apiKey}`;
+        const response = await axios.delete(url);
+    
+        return response;
+      }
+    
 }
 
 //const myAPI = new BandSiteApi('48bc6bc4-78d6-4b68-a757-b1dff5a33d60');

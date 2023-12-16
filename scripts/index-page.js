@@ -80,6 +80,7 @@
                 const comments = await backend.getComments();
                 console.log(comments);
                 feedback.innerHTML = '';
+                comments.sort((a, b) => b.timestamp - a.timestamp);
 
                 for (const comment of comments){
                     displayComment(comment);
@@ -94,48 +95,50 @@
 
         displayComments();
 
-    document.querySelector("#submit-btn").addEventListener("click", async (e) => {
-    e.preventDefault();
-
-     const newName = document.querySelector("#name").value;
-     const newComment = document.querySelector('#comment').value;
-    
-
-
-
-     newName.textContent = name;
-     newComment.textContent = comment;
-
-     const myNewComment = {
-        name: newName,
-        comment: newComment,
-     }
-
-
-     if (name.value === "" || comment.value === "") {
-         alert("Please fill required fields");
-         return;
-     }
-    await axios.post(commentAPI, myNewComment);
-    
-
-    displayComments();
-
-
-
-
-     name.value = "";
-     comment.value = "";
+        document.querySelector("#submit-btn").addEventListener("click", async (e) => {
+            e.preventDefault();
+          
+            const newName = document.querySelector("#name").value;
+            const newComment = document.querySelector("#comment").value;
+          
+            newName.textContent = name;
+            newComment.textContent = comment;
+          
+            const myNewComment = {
+              name: newName,
+              comment: newComment,
+            };
+          
+            if (newName.value === "" || newComment.value === "") {
+              alert("Please fill required fields");
+              return;
+            }
+          
+            await backend.postComment(myNewComment);
+          
+            displayComments();
+          
+            newName.value = "";
+            newComment.value = "";
+          });
+          
 
 
-  });
+          backend.deleteComment("c02bb202-067a-40a7-be54-2c7f24c833cb");
+          backend.deleteComment("fe81d3c6-6316-49c3-8eb6-b71a010e7ab1");
+          backend.deleteComment("524bfce9-1495-4013-bbb8-5384865743a9");
+
+
+
+
+
+
+
+
 
 
       
-
-  //commentArray.unshift({name: name.value, date: date.value, comment: comment.value});
-
-  //renderComments(commentArray, '.feedback');    
+  
     
 
    
