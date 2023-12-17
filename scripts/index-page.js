@@ -4,7 +4,7 @@
         const backend = new BandSiteApi('48bc6bc4-78d6-4b68-a757-b1dff5a33d60');
 
        const feedback = document.querySelector('.feedback');
-       const commentAPI = 'https://project-1-api.herokuapp.com';
+      
        
 
 
@@ -67,6 +67,9 @@
             feedbackHeaderName.textContent = commentObject.name;
             feedbackText.textContent = commentObject.comment;
             feedbackHeaderDate.innerText =  new Date(commentObject.timestamp).toDateString();
+          
+
+
 
     
     
@@ -81,6 +84,7 @@
                 console.log(comments);
                 feedback.innerHTML = '';
                 comments.sort((a, b) => b.timestamp - a.timestamp);
+                
 
                 for (const comment of comments){
                     displayComment(comment);
@@ -98,15 +102,13 @@
         document.querySelector("#submit-btn").addEventListener("click", async (e) => {
             e.preventDefault();
           
-            const newName = document.querySelector("#name").value;
-            const newComment = document.querySelector("#comment").value;
-          
-            newName.textContent = name;
-            newComment.textContent = comment;
-          
+            const newName = document.querySelector("#name");
+            const newComment = document.querySelector("#comment");
+            
             const myNewComment = {
               name: newName,
               comment: newComment,
+        
             };
           
             if (newName.value === "" || newComment.value === "") {

@@ -50,17 +50,15 @@ body {
 .header .navbar__list--item {
   width: 50%;
   font-weight: 400;
-  color: #ffffff;
 }
 .header .navbar__list--item a {
-  color: #ffffff;
+  color: #e1e1e1;
 }
 .header .navbar__list--item-underline {
   border-bottom: 4px solid #ffffff;
   font-weight: 600;
   padding-left: 0;
   margin-bottom: -1rem;
-  color: #ffffff;
 }
 @media (min-width: 768px) {
   .header {

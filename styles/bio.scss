@@ -29,6 +29,7 @@
 .about{
     padding-left: 1rem;
     padding-right: 1rem;
+    color: $back-color;
    @include tablet{
     @include size-between-tablet;
    }
@@ -113,9 +114,10 @@
         width: 60vw;
     }
     .container{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+       
     }
 }
 @include desktop{
@@ -135,6 +137,7 @@
 .gallery {
     padding: 0 1rem;
     background-color: #fafafa;
+    color: $back-color;
     @include tablet{
         @include size-between-tablet;
        }
@@ -162,8 +165,7 @@
   
     @include tablet {
       &__container--item {
-        display: flex;
-        flex-direction: row;
+       @include flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 1.625rem;
@@ -174,6 +176,9 @@
       }
 
     }
+  }
+  .container--img{
+    width: 100%;
   }
  
 
@@ -188,6 +193,11 @@
             margin-right: auto;
             margin-left: auto;
         }
+        @include desktop{
+            width: 63vw;
+            margin-right: auto;
+            margin-left: auto;
+        }
     }
   
     &--heading{
@@ -197,13 +207,14 @@
 }
 .container__comment{
     .label{
-        padding-left: 2.2rem;
+        padding-left: 3s.2rem;
         color: $silver;
     }
     &--name{
         @include flex;
         padding-top: 0.5rem; 
         padding-bottom: 1rem;
+
         .img{
             border-radius: 50%;
             width: 2.25rem;
@@ -216,7 +227,7 @@
         } 
         .name-box{
             width: 100%;
-            margin-left: 0.25rem;
+            margin-left: 1rem;
             border-radius: 0.25rem;
             height: 2.25rem;
             font-family: $font-family
@@ -228,6 +239,7 @@
         @include flex;
         padding-top: 0.5rem; 
         padding-bottom: 1rem;
+        margin-left: 1rem;
         .img{
             border-radius: 50%;
             width: 2.25rem;
@@ -251,6 +263,7 @@
      
     }
     &--btn{
+        margin-left: 1rem;
         @include flex;
         .img_blk{
             border-radius: 50%;
@@ -285,6 +298,11 @@
         margin-left: auto;
         margin-right: auto;
     }
+    @include desktop{
+        width: 63vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
     &__container{
         display: flex;
         flex-direction: row;
@@ -299,6 +317,10 @@
                 width: 2.875rem;
                 height:  2.875rem;
             }
+            @include desktop{
+                width: 2.875rem;
+                height:  2.875rem;
+            }
             
             background-color: $foto-back-color;
         }
@@ -309,7 +331,7 @@
             align-content: center;
             justify-content: flex-start;
             flex-wrap: nowrap;
-            padding-left: 0.25rem;
+            padding-left: 1rem;
             .feedback__header{
                 display: flex;
                 flex-direction: row;

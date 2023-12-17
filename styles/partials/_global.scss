@@ -55,14 +55,16 @@ body {
     list-style: none;
     padding: 0;
     padding-top: 1rem;
+  
 
     &--item {
       width: 50%;
       font-weight: 400;
-      color: $text-color;
+      
       a{
-        color: $text-color;
+        color: $foto-back-color;
       }
+    
     
       
       &-underline {
@@ -70,7 +72,7 @@ body {
         font-weight: 600;
         padding-left: 0;
         margin-bottom: -1rem;
-        color: $text-color;
+      
        
       }
      

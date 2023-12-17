@@ -36,7 +36,3 @@ class BandSiteApi {
       }
     
 }
-
-//const myAPI = new BandSiteApi('48bc6bc4-78d6-4b68-a757-b1dff5a33d60');
-//myAPI.getShows();
-//console.log(myAPI);
