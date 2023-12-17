@@ -1,28 +1,15 @@
 @use "variables" as *;
 @use "mixins.scss" as *;
 
-@import url("https://fonts.cdnfonts.com/css/avenir-lt-pro");
 
-/*
-@font-face {
-  font-family: "Avenir LT Pro";
-  font-weight: normal;
-  font-style: normal;
-  src: url(../../assets/Font/AvenirNextLTPro-Regular.otf) format("opentype");
-}
 
-@font-face {
-  font-family: "Avenir LT Pro";
-  font-weight: bold;
-  font-style: normal;
-  src: url(../../assets/Font/AvenirNextLTPro-Bold.otf) format("opentype");
-}
-*/
 
 * {
   box-sizing: border-box;
   margin: 0;
   text-decoration: none;
+  font-family: 'avenir next';
+
 }
 
 body {
@@ -39,12 +26,26 @@ body {
   padding-top: $headline-before-mobile;
   padding-bottom: $headline-after-mobile;
   text-align: center;
- 
+  @include tablet{
+    padding-left: 2rem;
+  };
+  @include desktop{
+    padding-left: 8rem;
+  };
 
   
 
   &__logo {
     @include logo;
+    @include tablet{
+      width: 2.25rem;
+      height: 8.5rem;
+    };
+    @include desktop{
+      width: 2.25rem;
+      height: 8.5rem;
+    };
+
   }
 
 .navbar__list {

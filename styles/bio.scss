@@ -8,23 +8,26 @@
     background-image: url(../assets/Images/hero-bio.jpg);
     background-size: cover;
     background-position: center;
-    height: 44vh;
+    height: 60vh;
     width: 100%;
     &__heading {
         background-color: rgba(0, 0, 0, 0.5);
-      font-weight: bold;
+      font-weight: 600;
       color: $text-color;
-      line-height: 44vh;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      @include header_mobile;
+      line-height: 60vh;
+      padding-left: 2rem;
+      font-size: 4rem;
+      
+      @include tablet{
+        font-size: 4rem;
+      }
+      @include desktop{
+          font-size: 4rem;
+      }
+     
+     
     }
-    @include tablet{
-      @include page-tablet;
-    }
-    @include desktop{
-      @include page-tablet;
-    }
+   
   }
 .about{
     padding-left: 1rem;
@@ -151,9 +154,11 @@
         @include header_mobile;
         @include tablet{
             @include header_tablet;
+            margin-left: 2rem;
         }
         @include desktop{
             @include header_tablet;
+            margin-left: 2rem;
         }
     }
   
@@ -201,19 +206,42 @@
     }
   
     &--heading{
-        padding-top: 1.5rem;
-        padding-bottom: 1rem;
+        padding: 2rem  1.5rem;
+        font-size: 1.8rem;
+        font-family: 'avenir next';
+        font-weight: 400;
+      
+      
+        @include tablet{
+            font-size: 1.5rem;
+            margin-left: 4rem;
+            font-weight: 400;
+        }
+        @include desktop{
+            font-size: 1.5rem;
+            margin-left: 4rem;
+            font-weight: 400;
+        }
     }
 }
 .container__comment{
     .label{
-        padding-left: 3s.2rem;
+        padding-left: 3.2rem;
         color: $silver;
+        @include tablet{
+            padding-left: 3.9rem;
+        color: $silver; 
+        }
+        @include desktop{
+            padding-left: 3.9rem;
+        color: $silver; 
+        }
     }
     &--name{
         @include flex;
         padding-top: 0.5rem; 
         padding-bottom: 1rem;
+        
 
         .img{
             border-radius: 50%;
@@ -230,7 +258,8 @@
             margin-left: 1rem;
             border-radius: 0.25rem;
             height: 2.25rem;
-            font-family: $font-family
+            font-family: $font-family;
+            padding-left: 1.25rem;
         } 
         
      
@@ -336,6 +365,7 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
+                padding-bottom: 1rem;
                 &--name{
                     font-weight: 600;
                 }
