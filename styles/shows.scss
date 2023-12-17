@@ -2,166 +2,147 @@
 @use "./partials/variables" as *;
 @use "./partials/mixins" as *;
 
-
-
 .hero-shows {
-    background-image: url(../assets/Images/Photo-gallery-3.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 44vh;
-    width: 100%;
-      
-    
-    &__heading {
-      font-weight: bold;
-      color: $text-color;
-      padding-top: 1rem;
-      padding-left: 13rem;
-      padding-right: 1rem;
-      font-size: 1.5rem;
-      @include header_mobile;
-      @include tablet{
-        position: absolute;
-        top: 10rem;
-        .shows__subhead{
-          @include subheader_tablet;
-        }
-        .shows__heading{
-          @include header_tablet;
-        }
-      }
+  background-image: url(../assets/Images/Photo-gallery-3.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 44vh;
+  width: 100%;
 
+  &__heading {
+    font-weight: bold;
+    color: $text-color;
+    padding-top: 1rem;
+    padding-left: 13rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    @include header_mobile;
+    @include tablet {
+      position: absolute;
+      top: 10rem;
+      .shows__subhead {
+        @include subheader_tablet;
+      }
+      .shows__heading {
+        @include header_tablet;
+      }
     }
-    @include tablet{
-      
-      @include page-tablet;
-    }
-    @include desktop{
-      @include page-tablet;
-    }
-   .shows__subhead{
+  }
+  @include tablet {
+    @include page-tablet;
+  }
+  @include desktop {
+    @include page-tablet;
+  }
+  .shows__subhead {
     font-weight: 400;
     @include subheader_mobile;
-   
-   }
-   &-video{
+  }
+  &-video {
     position: absolute;
     left: 13rem;
     top: 13rem;
-    @include tablet{
+    @include tablet {
       position: absolute;
       left: 34rem;
       top: 10rem;
       width: 50%;
     }
-  
+  }
+}
+
+.shows__heading {
+  font-size: 1.5rem;
+}
+
+.booking {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  &__title {
+    margin-top: 1.5rem;
+    padding-bottom: 1rem;
+    @include tablet {
+      padding-top: 1rem;
+      padding-left: 10rem;
     }
-  
-    }
-   
-   .shows__heading{
-    font-size: 1.5rem;
-    
   }
 
+  &__tablet {
+    display: none;
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-left: 1rem;
+      color: $silver;
+      justify-content: space-evenly;
+      padding-left: 18.313rem;
+      margin-right: 14.25rem;
+    }
+  }
+  .show__header {
+    @include tablet {
+      width: 20%;
+    }
+    &--location {
+      width: 40%;
+    }
+  }
+}
 
-
-  .booking{
-    width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    
-    &__title{
-        margin-top: 1.5rem;
-        padding-bottom: 1rem;
-        @include tablet{
-          padding-top: 1rem;
-          padding-left: 10rem;
-      }
-        }
-       
-    &__tablet{
-        display: none;
-        @include tablet{
-            display: flex;
-            flex-direction: row;
-            align-items: center; 
-            padding-left: 1rem;
-            color: $silver;
-            justify-content: space-evenly;
-            padding-left: 18.313rem;
-            margin-right: 14.25rem;
-            
-        }
-        }
-        .show__header{
-            @include tablet{
-             width: 20%;
-            }
-            &--location{
-                width: 40%;
-            }
-        }
-
+.show {
+  padding: 1rem 1rem;
+  border-bottom: 0.125rem solid $foto-back-color;
+  &:hover {
+    transform: scale(1.1);
+    background-color: $back-txt-color;
+  }
+  @include tablet {
+    margin-left: 22rem;
+    padding: 0, 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+  &__selected {
+    background-color: $foto-back-color;
+  }
+  &__header--mobile {
+    color: $foto-back-color;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    @include tablet {
+      display: none;
     }
-
-  
-  .show{
-   
-    padding: 1rem 1rem;
-    border-bottom: 0.125rem  solid $foto-back-color;
-    &:hover{
-      transform: scale(1.1);
-      background-color: $back-txt-color;
-    }
-    @include tablet{
-      margin-left: 22rem;
-        padding: 0, 1.5rem;
-        display: flex;
-        align-items: center;
-        
-      
-    }
-    &__selected{
-      background-color: $foto-back-color;
-    }
-    &__header--mobile{
-        color: $foto-back-color;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        @include tablet{
-            display: none;
-        }
-    }
-    &__date{
+  }
+  &__date {
+    font-weight: 600;
+    @include tablet {
+      width: 25%;
       font-weight: 600;
-      @include tablet{
-        width: 25%;
-        font-weight: 600;
-      }
-    }
-    &__venue{
-      @include tablet{
-        width: 25%;
-      }
-    }
-    &__location{
-      @include tablet{
-        width: 25%;
-      }
-    }
-    &__btn{
-      height: 2.5rem;
-      width: 100%;
-      background-color: $back-color;
-      color: $text-color;
-      border-radius: 4px;
-      margin-top: 1rem;
-      margin-top: 1rem;
-      @include tablet{
-        width: 25%;
-      }
-      
     }
   }
-
+  &__venue {
+    @include tablet {
+      width: 25%;
+    }
+  }
+  &__location {
+    @include tablet {
+      width: 25%;
+    }
+  }
+  &__btn {
+    height: 2.5rem;
+    width: 100%;
+    background-color: $back-color;
+    color: $text-color;
+    border-radius: 4px;
+    margin-top: 1rem;
+    margin-top: 1rem;
+    @include tablet {
+      width: 25%;
+    }
+  }
+}
